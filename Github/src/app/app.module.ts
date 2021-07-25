@@ -19,6 +19,7 @@ import { RepoFormComponent } from './repo-form/repo-form.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DayTimePipe } from './day-time.pipe';
+import { RoutingComponent } from './routing/routing.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DayTimePipe } from './day-time.pipe';
     FooterComponent,
     NotFoundComponent,
     DayTimePipe,
+    RoutingComponent,
   ],
   imports: [
     BrowserModule,
