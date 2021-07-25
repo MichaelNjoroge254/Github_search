@@ -1,7 +1,8 @@
-import { DayTime.Pipe } from './day-time.pipe';
+import { DayTimePipe } from './day-time.pipe';
 
-describe('DayTime.Pipe', () => {
-  it('should create an instance', () => {
-    expect(new DayTime.Pipe()).toBeTruthy();
+describe('DayTimePipe', () => {
+  it('create an instance', () => {
+    const pipe = new DayTimePipe();
+    expect(pipe).toBeTruthy();
   });
 });
