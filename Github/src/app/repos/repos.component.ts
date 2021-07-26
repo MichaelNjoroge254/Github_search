@@ -1,4 +1,6 @@
+import { SearchService } from './../services/search.service';
 import { Component, OnInit } from '@angular/core';
+import { Repos } from '../repos';
 
 @Component({
   selector: 'app-repos',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReposComponent implements OnInit {
 
-  constructor() { }
+  repository: Repos;
+
+  constructor(public search:SearchService) { }
 
   ngOnInit(): void {
+    this.searchRepository('akan');
   }
+
+  searchRepository(searchTerm: string) {
+    this.search.searchReposOnly(searchTerm);
+    this.repository = this.search.repoN;;
+    console.log(searchTerm)
+  }
+
+  
 
 }
