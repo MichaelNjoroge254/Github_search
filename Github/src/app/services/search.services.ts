@@ -10,10 +10,10 @@ import { Repos } from '../repos';
 })
 export class SearchService {
 
-  users: User[];
-  repos: Repo;
+  users: User[] = [];
+  repos!: Repo;
   repoN: Repos;
-  repository: Repos[];
+  repository!: Repos[];
   arrayData: any;
 
 
@@ -87,7 +87,7 @@ export class SearchService {
   //   return promise;
   // }
 
-  searchReposOnly(repoName) {
+  searchReposOnly(repoName: string) {
     // tslint:disable-next-line:class-name
     interface repobyName {
       name: string;
