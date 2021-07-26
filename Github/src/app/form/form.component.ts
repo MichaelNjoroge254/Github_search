@@ -9,7 +9,7 @@ export class FormComponent implements OnInit {
 
   @Output() emitSearch:EventEmitter<string> = new EventEmitter<any>()
 
-  username: string;
+  username: string | undefined;
 
   searchFormControl=new FormControl('', [
     Validators.required
@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
 
   constructor() { }
 
-  search(event) {
+  search(event: { keyCode: number; }) {
   
     if(event.keyCode===13){
       this.emitSearch.emit(this.username)
