@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Repo } from '../repo';
-import { SearchService } from '../services/search.service';
+import { SearchService } from '../services/search.services';
 import { User } from '../user';
 
 @Component({
@@ -9,14 +9,14 @@ import { User } from '../user';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  repos: Repo;
-  users: User[];
+  repos!: Repo;
+  users!: User[];
 
   constructor(private search: SearchService) { }
 
   ngOnInit(): void {
-    this.searchUsers('brian-weloba');
-    this.searchRepos('brian-weloba');
+    this.searchUsers('MichaelNjoroge254');
+    this.searchRepos('MichaelNjoroge254');
   }
 
   searchUsers(searchTerm: string) {
@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit {
       () => {
         this.users = this.search.users;
       },
-      (error) => {
+      (error: any) => {
         console.log(error)
       }
     )
@@ -35,7 +35,7 @@ export class ProfileComponent implements OnInit {
       () => {
         this.repos = this.search.repos;
       },
-      (error) => {
+      (error: any) => {
         console.log(error)
       }
     )
