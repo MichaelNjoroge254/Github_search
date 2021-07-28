@@ -12,5 +12,7 @@ export class User {
     public email: any,
     public html_url: any,
     public created_at: any
-  ) { }
+  ) {
+    
+   }
 }
