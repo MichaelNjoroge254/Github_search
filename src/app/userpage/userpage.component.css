@@ -1,20 +1,18 @@
 body{
-    background-color: rgb(7, 8, 14);
+    background-color: rgb(126, 142, 216);
     color: white;
-    /* margin: 10px solid  rgb(7, 8, 14);*/
     margin: 0%;
 } 
 
 input{
-    background-color: rgb(7, 8, 14);
+    background-color: rgb(232, 233, 236);
     margin-left: 10%;
     width: 40%;
     margin-top: 3%;
 }
 .card{
-    background-color: rgb(7, 8, 14);
-    /* border-radius: 20px; */
-    border-color: blue;
+    background-color: rgb(35, 39, 41);
+    border-color: rgb(204, 204, 235);
     margin: 10px;
     height: 25vh;
     width: 45%;
@@ -35,11 +33,11 @@ img{
 }
 h2,h1{
     margin-left: 27%;
-    /* text-align: center; */
+
 }
 p{
     margin-left: 4%;
-    /* text-align: center; */
+   
 }
 a{
     text-decoration: none;
@@ -52,7 +50,7 @@ a{
     margin-left: 20%;
 }
 span{
-    color:  blue;
+    color:  rgb(51, 58, 54);
   
 }
 #head{
@@ -63,7 +61,7 @@ span{
 }
 #space{
     margin-right: 4%;
-    /* margin-top:2%; */
+    
 }
 #form{
     margin-left: 20%;
