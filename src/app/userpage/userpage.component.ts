@@ -5,6 +5,7 @@ import { Repo } from '../repo';
 import { Observable } from 'rxjs';
 
 
+
 @Component({
   selector: 'app-userpage',
   templateUrl: './userpage.component.html',
@@ -39,7 +40,10 @@ export class UserpageComponent implements OnInit {
    
 
   ngOnInit(): void {
-    this.getSearchedUser('Becka7');
+    this.getSearchedUser('MichaelNjoroge254');
   }
 
 }
+
+
+
