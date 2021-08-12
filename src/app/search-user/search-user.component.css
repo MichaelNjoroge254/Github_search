@@ -1,0 +1,9 @@
+form{
+    float:left;
+    margin-top:3%;
+}
+input{
+    background-color:white ;
+    color:rgb(7, 8, 14);
+    margin-left: 10%;
+}

@@ -1,0 +1,14 @@
+<div class="col-md-12">
+    <h3>Popular Repositories</h3>
+    <div class="row">
+        <div class="col-md-4 card "*ngFor="let Repo of repos" >
+           <a href="{{Repo.html_url}}"><h3>{{Repo.name}}</h3></a>
+           <p> {{Repo.description}} </p>
+           <p> {{Repo.language}} </p>
+           <p> {{Repo.created_at | dateCount}}  </p>
+          
+           
+
+        </div>
+
+    </div>

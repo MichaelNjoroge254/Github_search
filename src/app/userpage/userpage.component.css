@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(126, 142, 216);
+    color: white;
+    margin: 0%;
+} 
+
+input{
+    background-color: rgb(232, 233, 236);
+    margin-left: 10%;
+    width: 40%;
+    margin-top: 3%;
+}
+.card{
+    background-color: rgb(35, 39, 41);
+    border-color: rgb(204, 204, 235);
+    margin: 10px;
+    height: 25vh;
+    width: 45%;
+
+}
+img{
+    border-radius: 50%;
+    width:70%;
+    margin-bottom: 10%;
+    margin-left: 9%;
+
+}
+.fol{
+    display: flex;
+}
+#folo{
+    margin-left: 10%;
+}
+h2,h1{
+    margin-left: 27%;
+
+}
+p{
+    margin-left: 4%;
+   
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    margin-bottom: 10%;
+    padding-top: 2%;
+}
+#reps{
+    margin-left: 20%;
+}
+span{
+    color:  rgb(51, 58, 54);
+  
+}
+#head{
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 10%;
+
+}
+#space{
+    margin-right: 4%;
+    
+}
+#form{
+    margin-left: 20%;
+}

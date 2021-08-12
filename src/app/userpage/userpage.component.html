@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github_search</title>
+    <link rel="stylesheet" href="./userpage.component.css">
+</head>
+<body>
+    <div class="nav">
+       <h1 id="head">G-<span>Search</span></h1>
+       <h3 id ="space" routerLink="repo">Repositories</h3>
+       <h3><span>Users</span></h3>
+
+       <app-search-user (searchResponse)="getSearchedUser( $event )" id="form"></app-search-user>
+    </div>
+
+    <div id="login-user">
+    <div class="row">
+        
+        <div class="col-md-4  ">
+            <h1>Profile</h1>
+            <img src="{{user.avatar_url}}" alt="">
+            <h2> {{user.login}} </h2>
+            <p> {{user.location}} </p>
+            <div class="fol">
+                <p id="folo"> Followers {{user.followers}} </p>
+                <p id="folo"> Following {{user.following}} </p>
+            </div>
+            <p id="reps"> Repos{{user.public_repos}} </p>
+
+        </div>
+        <div class="col-md-8">
+            <h3>Popular Repositories</h3>
+            <div class="row">
+                <div class="col-md-4 card "*ngFor="let Repo of repos" >
+                   <a href="{{Repo.html_url}}"><h3>{{Repo.name}}</h3></a>
+                   <p> {{Repo.description}} </p>
+                   <p> {{Repo.language}} </p>
+                   <p> {{Repo.created_at | dateCount}}  </p>
+                  
+                   
+
+                </div>
+
+            </div>
+        </div>
+   </div>
+    </div>
+</body>
+</html>
+
